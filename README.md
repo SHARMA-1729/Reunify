@@ -1,22 +1,13 @@
-lost-and-found/
-  client/      # React frontend
-  server/      # Node.js backend
-  ...
 
-git clone <repo-url>
-cd lost-and-found
-cd client
-npm install
-cd ../server
-npm install
 
 
 <p align="center">
   <img src="https://t4.ftcdn.net/jpg/08/05/78/71/360_F_805787195_QNhGb7hAhscgzN7OjREvnffRLUGpyTDG.jpg" alt="Reunify Logo" width="600" height="200">
 </p>
 
-# Runify
-
+# 🧒 Runify – Missing Child Face Recognition System
+> **Runify** is a full-stack AI-powered web application designed to **help reunite lost children with their families** through **facial recognition technology**.  
+> Built using the **MERN stack (MongoDB, Express, React, Node.js)**, it provides a secure, efficient, and socially impactful platform to report, search, and match missing child cases.
 <p align="center">
   <b>Connecting Families, Bringing Hope</b>
 </p>
