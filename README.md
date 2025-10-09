@@ -2,8 +2,7 @@ lost-and-found/
   client/      # React frontend
   server/      # Node.js backend
   ...
-data_anyst/    # Data analysis scripts and notebooks
-reports/       # Reports and figures
+
 git clone <repo-url>
 cd lost-and-found
 cd client
@@ -41,9 +40,6 @@ Runify/
 │   ├── routes/ # API routes (auth, cases, face match)
 │   ├── controllers/ # Business logic
 │   └── utils/ # Image handling, embedding comparison
-│
-├── data_anyst/ # Data analysis scripts or notebooks
-├── reports/ # Reports, figures, visualizations
 └── README.md
 ```
 
