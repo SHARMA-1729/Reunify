@@ -1,4 +1,21 @@
+lost-and-found/
+  client/      # React frontend
+  server/      # Node.js backend
+  ...
+data_anyst/    # Data analysis scripts and notebooks
+reports/       # Reports and figures
+git clone <repo-url>
+cd lost-and-found
+cd client
+npm install
+cd ../server
+npm install
+
 # Lost and Found
+
+<p align="center">
+  <img src="https://t4.ftcdn.net/jpg/08/05/78/71/360_F_805787195_QNhGb7hAhscgzN7OjREvnffRLUGpyTDG.jpg" alt="Reunify Logo" width="600" height="200">
+</p>
 
 A web application to help people report and find lost or found children. The project consists of a client (React) and a server (Node.js/Express) with face recognition capabilities.
 
@@ -8,16 +25,12 @@ A web application to help people report and find lost or found children. The pro
 - Upload and manage images
 - Face recognition for matching lost and found children
 - Email notifications
-- Data analysis and dashboards (Power BI)
 
 ## Project Structure
 ```
 lost-and-found/
   client/      # React frontend
   server/      # Node.js backend
-  ...
-data_anyst/    # Data analysis scripts and notebooks
-reports/       # Reports and figures
 ```
 
 ## Getting Started
@@ -25,7 +38,6 @@ reports/       # Reports and figures
 ### Prerequisites
 - Node.js (v14+)
 - npm or yarn
-- Python 3 (for data analysis)
 
 ### Setup
 #### 1. Clone the repository
@@ -58,14 +70,9 @@ npm install
   npm start
   ```
 
-#### 4. Data Analysis (Optional)
-- Explore the `data_anyst/analysis/Product_Analysis/` folder for Jupyter notebooks and Power BI dashboards.
-
 ## Folder Details
 - `client/`: React app source code
 - `server/`: Express server, models, routes, and face recognition models
-- `data_anyst/`: Data generation and analysis scripts
-- `reports/`: Figures and reports
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
