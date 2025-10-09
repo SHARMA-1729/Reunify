@@ -5,8 +5,8 @@
   <img src="https://t4.ftcdn.net/jpg/08/05/78/71/360_F_805787195_QNhGb7hAhscgzN7OjREvnffRLUGpyTDG.jpg" alt="Reunify Logo" width="600" height="200">
 </p>
 
-# 🧒 Runify – Missing Child Face Recognition System
-> **Runify** is a full-stack AI-powered web application designed to **help reunite lost children with their families** through **facial recognition technology**.  
+# 🧒 Reunify – Missing Child Face Recognition System
+> **Reunify** is a full-stack AI-powered web application designed to **help reunite lost children with their families** through **facial recognition technology**.  
 > Built using the **MERN stack (MongoDB, Express, React, Node.js)**, it provides a secure, efficient, and socially impactful platform to report, search, and match missing child cases.
 <p align="center">
   <b>Connecting Families, Bringing Hope</b>
@@ -17,7 +17,7 @@
 ## 📁 Project Structure
 
 ```
-Runify/
+Reunify/
 │
 ├── client/ # React frontend
 │   ├── src/
@@ -74,10 +74,10 @@ Runify/
 
 ---
 
-## 🧠 Why Runify Matters
+## 🧠 Why Reunify Matters
 
 ### **🎯 Purpose**
-Runify addresses a **real-world humanitarian issue**—helping locate and reunite missing children using **AI-driven facial recognition**.
+Reunify addresses a **real-world humanitarian issue**—helping locate and reunite missing children using **AI-driven facial recognition**.
 
 ### **💪 Impact**
 - Reduces manual search time from **days to minutes**.  
