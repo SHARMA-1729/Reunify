@@ -8,6 +8,7 @@ import Logo from '@/assets/logo.png';
 export function Navbar() {
   const navigate = useNavigate();
   const token = localStorage.getItem('token');
+  const userRole = localStorage.getItem('userRole');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleLogout = async () => {
@@ -23,6 +24,8 @@ export function Navbar() {
       console.error('Logout error:', err);
     }
     localStorage.removeItem('token');
+    localStorage.removeItem('userRole');
+    localStorage.removeItem('userName');
     navigate('/login');
   };
 
@@ -47,18 +50,22 @@ export function Navbar() {
               >
                 Home
               </Link>
-              <Link
-                to="/lost"
-                className="text-sm font-medium transition-colors hover:text-primary"
-              >
-                Report Lost
-              </Link>
-              <Link
-                to="/found"
-                className="text-sm font-medium transition-colors hover:text-primary"
-              >
-                Report Found
-              </Link>
+              {userRole === 'parent' && (
+                <Link
+                  to="/lost"
+                  className="text-sm font-medium transition-colors hover:text-primary"
+                >
+                  Report Lost
+                </Link>
+              )}
+              {userRole === 'finder' && (
+                <Link
+                  to="/found"
+                  className="text-sm font-medium transition-colors hover:text-primary"
+                >
+                  Report Found
+                </Link>
+              )}
               <Link
                 to="/dashboard"
                 className="text-sm font-medium transition-colors hover:text-primary"
@@ -121,20 +128,24 @@ export function Navbar() {
                 >
                   Home
                 </Link>
-                <Link
-                  to="/lost"
-                  className="block px-4 py-2 text-sm font-medium transition-colors hover:bg-accent rounded-md"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Report Lost
-                </Link>
-                <Link
-                  to="/found"
-                  className="block px-4 py-2 text-sm font-medium transition-colors hover:bg-accent rounded-md"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Report Found
-                </Link>
+                {userRole === 'parent' && (
+                  <Link
+                    to="/lost"
+                    className="block px-4 py-2 text-sm font-medium transition-colors hover:bg-accent rounded-md"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Report Lost
+                  </Link>
+                )}
+                {userRole === 'finder' && (
+                  <Link
+                    to="/found"
+                    className="block px-4 py-2 text-sm font-medium transition-colors hover:bg-accent rounded-md"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Report Found
+                  </Link>
+                )}
                 <Link
                   to="/dashboard"
                   className="block px-4 py-2 text-sm font-medium transition-colors hover:bg-accent rounded-md"

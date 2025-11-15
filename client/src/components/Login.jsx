@@ -35,6 +35,8 @@ export function Login() {
         }
       );
       localStorage.setItem('token', res.data.token);
+      localStorage.setItem('userRole', res.data.role);
+      localStorage.setItem('userName', res.data.name);
       navigate('/dashboard');
     } catch (err) {
       setError(

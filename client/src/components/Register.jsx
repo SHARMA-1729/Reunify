@@ -39,11 +39,14 @@ export function Register() {
     setError('');
 
     try {
-      await axios.post(
+      const res = await axios.post(
         `${import.meta.env.VITE_API_URL}/api/auth/register`,
         formData
       );
-      navigate('/login');
+      localStorage.setItem('token', res.data.token);
+      localStorage.setItem('userRole', res.data.role);
+      localStorage.setItem('userName', res.data.name);
+      navigate('/dashboard');
     } catch (err) {
       setError(
         err.response?.data?.message || 'Registration failed. Please try again.'
